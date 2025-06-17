@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zensware.com</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #0b0b0f;
+      color: #e3dcff;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    header {
+      background-color: #16131f;
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #2e2b3a;
+    }
+
+    header h1 {
+      font-size: 1.75rem;
+      color: #bb86fc;
+      font-weight: 700;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      font-weight: 600;
+      color: #cfc4ff;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #bb86fc;
+    }
+
+    .hero {
+      padding: 6rem 2rem 4rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, #1c1528 0%, #10091a 100%);
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      max-width: 650px;
+      margin: 0 auto 2rem auto;
+      color: #c0b3e6;
+    }
+
+    .download-btn {
+      background-color: #7c4dff;
+      color: #fff;
+      padding: 0.9rem 2.2rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.25s;
+      box-shadow: 0 4px 20px rgba(124, 77, 255, 0.3);
+    }
+
+    .download-btn:hover {
+      background-color: #a974ff;
+    }
+
+    .features {
+      padding: 5rem 2rem;
+      background-color: #140f1e;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .feature-card {
+      background-color: #1e172c;
+      padding: 2rem;
+      border-radius: 15px;
+      color: #e3dcff;
+      border: 1px solid #30294a;
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card h3 {
+      margin-bottom: 1rem;
+      color: #bb86fc;
+      font-size: 1.25rem;
+    }
+
+    .feature-card p {
+      color: #c2b6e2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #16131f;
+      color: #a199c7;
+      font-size: 0.9rem;
+      border-top: 1px solid #2e2b3a;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>zensware.com</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>External Color-Bot for Valorant</h2>
+    <p>Take your gameplay to the next level with a fast, reliable, and customizable pixel detection bot built for Valorant.</p>
+    <a href="https://github.com/zensware/valorant-color-bot/releases/latest" target="_blank">
+      <button class="download-btn">Download Now</button>
+    </a>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature-card">
+      <h3>Precision Detection</h3>
+      <p>Ultra-fast pixel scanning detects target colors with pinpoint accuracy, ideal for clutch plays and flick shots.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Custom Configs</h3>
+      <p>Fine-tune sensitivity, color ranges, and toggle settings using simple JSON configuration files.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Live Status OSD</h3>
+      <p>A lightweight overlay keeps you informed with real-time bot status and toggles without distraction.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Safe & Efficient</h3>
+      <p>Runs in the background without impacting performance, with keybind control for total command.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; Undected Color-Bot created by zensware. Hosted with GitHub Pages.</p>
+  </footer>
+</body>
+
+</html>
